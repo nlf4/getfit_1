@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+body {
+    background-image: url("options-bg3.png");
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+
+    padding: 5px 20px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.options-nav li {
+    font-size: 24px;
+    padding: 15px 5px;
+}
+
+.options-nav li a {
+    display: block;
+}
+
+.logo a img {
+    width: 200px;
+}
+
+.item.button a {
+    padding: 7px 15px;
+    background: #3c8d81;
+    border: 1px solid #fdf8ff;
+    border-radius: 50em;
+}
+
+.item.button {
+    /*border-radius: 25px;*/
+    /*border: 1px #5a8074 solid;*/
+    /*background: rgba(93, 83, 173, 0.64);*/
+    /*padding: 10px;*/
+    /*margin: 5px 10px;*/
+    margin-right: 60px;
+}
+.item.button a:hover {
+    background: #7879c6;
+    background: teal;
+}
+
+.options-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-fluid {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 700px;
+    justify-content: space-around;
+    background: rgba(20, 20, 20, 0.6);
+}
+
+.options-item {
+    width: 300px;
+    flex-basis: 34%;
+}
