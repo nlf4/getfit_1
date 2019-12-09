@@ -1,2 +1,1 @@
-"# getfit-app" 
-"# getfit" 
+GetfiT php/mysql web application.
