@@ -3,8 +3,21 @@
 function NavBar() {
     print LoadTemplate("navbar");
 }
-function BasicHead() {
-    print LoadTemplate("basic_head");
+
+function BasicHead( $css = "" )
+{
+    global $_application_folder;
+
+    $str_stylesheets = "";
+    foreach( $css as $stylesheet )
+    {
+        $str_stylesheets .= '<link rel="stylesheet" href="' . $_application_folder . '/css/' . $stylesheet . '">' ;
+    }
+    $data = array("stylesheets" => $str_stylesheets );
+    $template = LoadTemplate("basic_head");
+    print ReplaceContentOneRow($data, $template);
+
+    $_SESSION["head_printed"] = true;
 }
 
 function LoadTemplate ( $name ) {

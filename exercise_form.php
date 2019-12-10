@@ -1,15 +1,11 @@
 <?php
 require_once "lib/autoload.php";
-
+//$css = "exercise-form.css";
 BasicHead();
-
+NavBar();
 ?>
 <body>
-NavBar();
 
-<h1>New Exercise</h1>
-<div class="container">
-    <div class="row">
 
         <?php
         $data = GetData("select * from exercises where exe_id=" . $_GET['id'] );
@@ -17,8 +13,6 @@ NavBar();
         ReplaceContent( $data, $template);
         ?>
 
-    </div>
-</div>
 
 </body>
 </html>

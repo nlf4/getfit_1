@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url("img/profile-bg.jpg");
+    background-image: url("profile-bg.jpg");
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -142,6 +142,11 @@ section {
     border-radius: 30px;
     margin: 15px 15px;
     padding: 15px;
+    transition: all .2s ease;
+}
+
+.col li:hover {
+   background: #c6c6c6;
 }
 
 .workout-column li {
@@ -160,7 +165,8 @@ section {
     border-radius: 20px;
     cursor: pointer;
     background: white;
-    color: #717876;;
+    color: #717876;
+    transition: all .2s ease;
 }
 #add-btn:hover {
     background: rgb(206, 206, 211);
