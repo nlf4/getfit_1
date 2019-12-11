@@ -7,18 +7,18 @@ function NavBar() {
 function BasicHead( $css = "" )
 {
     global $_application_folder;
-
-
     $str_stylesheets = "";
-    foreach( $css as $stylesheet )
+    if ( is_array($css) )
     {
-        $str_stylesheets .= '<link rel="stylesheet" href="' . $_application_folder . '/css/' . $stylesheet . '">' ;
+        foreach( $css as $stylesheet )
+        {
+            $str_stylesheets .= '<link rel="stylesheet" href="' . $_application_folder . '/css/' . $stylesheet . '">' ;
+        }
+        $data = array("stylesheets" => $str_stylesheets );
     }
-    $data = array("stylesheets" => $str_stylesheets );
     $template = LoadTemplate("basic_head");
     print ReplaceContentOneRow($data, $template);
-
-//    $_SESSION["head_printed"] = true;
+    $_SESSION["head_printed"] = true;
 }
 
 function LoadTemplate ( $name ) {
@@ -39,4 +39,17 @@ function ReplaceContent( $data, $template_html )
 
         print $content;
     }
+}
+function ReplaceContentOneRow( $row, $template_html )
+{
+    //replace fields with values in template
+    $content = $template_html;
+    if ( is_array($row))
+    {
+        foreach($row as $field => $value)
+        {
+            $content = str_replace("@@$field@@", $value, $content);
+        }
+    }
+    return $content;
 }

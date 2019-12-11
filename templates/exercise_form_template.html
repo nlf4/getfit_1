@@ -1,6 +1,6 @@
 <div class="wrapper">
     <h1 id="new-exercise-heading">New Exercise</h1>
-    <form method="post" action="lib/save.php" class="form">
+    <form method="post" action="lib/save.php" class="form" id="exercise-form">
         <div class="description">
             <label for="exe_desc" class="col-form-label">Description</label>
             <textarea class="form-control" id="exe_desc" name="exe_desc" value="@@exe_desc@@"></textarea>
@@ -17,7 +17,7 @@
 
             <label for="exe_img" class="col-form-label">Image</label>
             <input type="text" class="form-control" id="exe_img" name="exe_img" value="@@exe_img@@">
-            <button type="submit">Submit</button>
+            <input type="submit" id="submit-btn">Submit</button>
         </div>
     </form>
 </div>

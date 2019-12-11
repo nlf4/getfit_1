@@ -1,13 +1,13 @@
 <?php
 require_once "lib/autoload.php";
-$css = "options.css";
+$css = "login.css";
 BasicHead($css);
 NavBar();
 ?>
     <body>
         <?php
-        $data = GetData("select * from exercises where exe_id=" . $_GET['id'] );
-        $template = LoadTemplate("detail");
+        $data = GetData("select * from users");
+        $template = LoadTemplate("login");
         ReplaceContent( $data, $template);
         ?>
     </body>
