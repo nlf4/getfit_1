@@ -8,6 +8,7 @@ function BasicHead( $css = "" )
 {
     global $_application_folder;
 
+
     $str_stylesheets = "";
     foreach( $css as $stylesheet )
     {
@@ -17,7 +18,7 @@ function BasicHead( $css = "" )
     $template = LoadTemplate("basic_head");
     print ReplaceContentOneRow($data, $template);
 
-    $_SESSION["head_printed"] = true;
+//    $_SESSION["head_printed"] = true;
 }
 
 function LoadTemplate ( $name ) {

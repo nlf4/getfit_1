@@ -1,7 +1,7 @@
 <?php
 require_once "lib/autoload.php";
-//$css = "options.css";
-BasicHead();
+$css = "options.css";
+BasicHead($css);
 NavBar();
 ?>
 <body>

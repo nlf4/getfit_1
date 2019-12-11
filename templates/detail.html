@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <h1 id="new-exercise-heading">New Exercise</h1>
+    <form method="post" action="lib/save.php" class="form">
+        <div class="description">
+            <label for="exe_desc" class="col-form-label">Description</label>
+            <textarea class="form-control" id="exe_desc" name="exe_desc" value="@@exe_desc@@"></textarea>
+        </div>
+        <div class="details">
+            <label for="exe_id" class="col-form-label">Id</label>
+            <input type="text" class="form-control" id="exe_id" name="exe_id" readonly value="@@exe_id@@">
+
+            <label for="exe_name" class="col-form-label">Name</label>
+            <input type="text" class="form-control" id="exe_name" name="exe_name" value="@@exe_name@@">
+
+            <label for="exe_cat" class="col-form-label">Category</label>
+            <input type="text" class="form-control" id="exe_cat" name="exe_cat" value="@@exe_cat@@">
+
+            <label for="exe_img" class="col-form-label">Image</label>
+            <input type="text" class="form-control" id="exe_img" name="exe_img" value="@@exe_img@@">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>

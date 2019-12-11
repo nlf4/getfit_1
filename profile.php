@@ -1,13 +1,12 @@
 <?php
 require_once "lib/autoload.php";
-//$css = "profile.css";
-BasicHead();
+$css = "profile.css";
+BasicHead($css);
 //BasicHead();
 ?>
 <body>
         <?php
-
-        $data = GetData("select * from exercises where exe_id=" . $_GET['id'] );
+        $data = GetData("select * from exercises");
         $template = LoadTemplate("profile");
         print $template;
 //        ReplaceContent( $data, $template);
