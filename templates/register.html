@@ -1,87 +1,37 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <link href="/css/register.css" rel="stylesheet">
-        
-    </head>
+<form id="login-form" class="form" action="lib/register.php" method="post">
 
-    <body>
-       <nav>
-            <div id="logo"><a href="#" title="logo"><img src="../images/logo1.svg" alt="Logo van de site" class="logo"></a></div>
-            <div id="links">
-                <li><a href=”#”>About</a></li>
-                <li><a href=”#”>Contact</a></li>
-            </div>
-       </nav>
-        <div id="login">
-        
-            <div class="container">
-                <div id="login-row" class="row justify-content-center align-items-center">
-                    <div id="login-column" class="col-md-12">
-                        <div id="login-box" class="col-md-12">
-                            <form id="login-form" class="form" action="" method="post">
-                                    <h3 class="text-center text-info">Register</h3>
-                                <div class="container">
-                                  <div class="row">
-                                   <div class="col-sm-12">
-                                        <label for="first name" class="text-info">First name</label><br>
-                                    <input type="text" name="first name" id="first name" class="form-control">
-                                   </div>
-                                   </div>
-                                   <div class="col-sm-">
-                                        <label for="Last name" class="text-info">Last name</label><br>
-                                    <input type="text" name="Last name" id="Last name" class="form-control">
-                                   </div>
-                                <div class="col-sm-">
-                                        <label for="E-mail" class="text-info">E-mail</label><br>
-                                    <input type="text" name="E-mail" id="E-mail" class="form-control">
-                                   </div>
-                                <div class="col-sm-">
-                                    <label for="password" class="text-info">Password:</label><br>
-                                    <input type="text" name="password" id="password" class="form-control">
-                                </div>
-                                <div class="col-sm-">
-                                        <label for="Confirm password" class="text-info">Confirm password</label><br>
-                                    <input type="text" name="Confirm password" id="Confirm password" class="form-control">
-                                   </div>
-                                <br>
-                                <div class="form-group">
-                                    <input type="Register" name="Register" class="btn btn-info btn-md" value="Register">
-                                </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+    <input type="hidden" id="formname" name="formname" value="registration_form">
+    <input type="hidden" id="tablename" name="tablename" value="users">
+    <input type="hidden" id="pkey" name="pkey" value="usr_id">
+
+    <h3 class="text-center text-info">Register</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <label for="usr_firstname" class="text-info">First name</label><br>
+                <input type="text" name="usr_firstname" id="usr_firstname" class="form-control" value="">
             </div>
         </div>
-    </body>
-    <footer>
-        <p class="copyright">Copyright © 2019 GetfiT.
-        <span class="second-line">All Rights Reserved.</span>
-        </p>
-          <div>
-            <ul class="social-media-list">
-                <li>
-                    <a href="https://www.facebook.com/">
-                        <ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/">
-                        <ion-icon class="logo-twitter" name="logo-twitter"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/">
-                        <ion-icon class="logo-instagram" name="logo-instagram"></ion-icon>
-                    </a>
-                </li>
-            </ul>
+        <div class="col-sm-">
+            <label for="usr_lastname" class="text-info">Last name</label><br>
+            <input type="text" name="usr_lastname" id="usr_lastname" class="form-control" value="">
         </div>
-        
-        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-    </footer>
-</html>
+        <div class="col-sm-">
+            <label for="usr_email" class="text-info">E-mail</label><br>
+            <input type="email" name="usr_email" id="usr_email" class="form-control" value="">
+        </div>
+        <div class="col-sm-">
+            <label for="usr_password" class="text-info">Password:</label><br>
+            <input type="password" name="usr_password" id="usr_password" class="form-control" value="">
+        </div>
+        <div class="col-sm-">
+            <label for="usr_passwordconfirm" class="text-info">Confirm password</label><br>
+            <input type="password" name="usr_passwordconfirm" id="usr_passwordconfirm" class="form-control" value="">
+        </div>
+        <br>
+        <div class="form-group">
+            <input type="submit" class="btn btn-info btn-md" name="registerbutton" value="Register">
+        </div>
+    </div>
+
+</form>

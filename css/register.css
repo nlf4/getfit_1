@@ -1,11 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(/images/gym.jpg);
+  background-image: url(/img/gym.jpg);
   height: 100vh;
 }
 #login .container #login-row #login-column #login-box {
-  margin-top: 120px;
+  /*margin-top: 120px;*/
   max-width: 550px;
   height: 500px;
   border: 1px solid #9C9C9C;
@@ -25,12 +25,12 @@ img {
 }
 
 footer {
-    background-color: ;
-    border-top: px solid #ededed;
+    /*background-color: ;*/
+    /*border-top: px solid #ededed;*/
     padding: 210px;
     z-index: 2;
     position: relative;
-    color: #484848;
+    /*color: #484848;*/
     text-align: center;
     color:whitesmoke;
 }
@@ -42,7 +42,7 @@ nav {
 
 #links {
     display: flex;
-    justify-content: 
+    /*justify-content: */
 }
 
 #links li {
