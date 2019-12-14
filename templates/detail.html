@@ -1,6 +1,13 @@
 <div class="wrapper">
     <h1 id="detail-heading">@@exe_name@@</h1>
 
+    <form method="post" action="lib/update.php" class="form" id="detail">
+
+        <input type="hidden" id="formname" name="formname" value="detail">
+        <input type="hidden" id="afterinsert" name="afterinsert" value="profile.php">
+        <input type="hidden" id="tablename" name="tablename" value="exercises">
+        <input type="hidden" id="pkey" name="pkey" value="exe_id">
+
         <div class="description">
             <label for="exe_desc" class="col-form-label">Description: </label>
             <p id="exe_desc">@@exe_desc@@</p>
@@ -26,5 +33,9 @@
 
         </div>
     <a href="profile.php"><</a>
+    <input type="submit" name="editbutton" id="editbutton" value="Edit">
+    <input type="submit" name="deletebutton" id="deletebutton" value="Delete">
+
+    </form>
 
 </div>

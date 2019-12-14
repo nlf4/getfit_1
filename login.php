@@ -8,6 +8,7 @@ if ( isset($_SESSION['usr']) ) { $_SESSION["msg"][] = "You are already logged in
 
 BasicHead();
 NavBar();
+ShowMessages();
 ?>
 <!--<!DOCTYPE html>-->
 <!--<html>-->

@@ -1,30 +1,25 @@
 <?php
+$login_form = true;
 require_once "autoload.php";
 
-$formname = $_POST["loginform"];
+$formname = $_POST["formname"];
 $buttonvalue = $_POST['loginbutton'];
 
 if ( $formname == "login_form" AND $buttonvalue == "Log in" )
 {
-    //gebruiker opzoeken ahv zijn login (e-mail)
-    $sql = "SELECT * FROM users WHERE usr_email='" . $_POST['usr_email'] . "' ";
-    $data = GetData($sql);
-    if ( count($data) == 1 )
+    if ( CheckLogin( $_POST['usr_email'], $_POST['usr_password'] ) )
     {
-        $row = $data[0];
-        //password controleren
-        if ( password_verify( $_POST['usr_password'], $row['usr_password'] ) ) $login_ok = true;
-    }
-
-    if ( $login_ok )
-    {
-        print "Welcome, " . $row["usr_firstname"] . ". You are logged in!";
-        session_start();
-        $_SESSION['usr'] = $row;
+        $_SESSION["msg"][] = "Welcome, " . $_SESSION['usr']['usr_voornaam'] . "!" ;
+        header("Location: /dag2/profile.php");
     }
     else
     {
-        print "Sorry! Wrong login or password!";
+        $_SESSION["msg"][] = "Sorry! Wrong password!";
+        header("Location: /dag2/login.php");
     }
+}
+else
+{
+    $_SESSION["msg"][] = "Wrong formname or buttonvalue";
 }
 ?>
