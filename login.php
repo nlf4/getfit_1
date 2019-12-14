@@ -8,7 +8,7 @@ require_once "lib/autoload.php";
 if ( isset($_SESSION['usr']) ) { $_SESSION["msg"][] = "You are already logged in!"; header("Location: profile.php"); exit; }
 
 BasicHead();
-NavBar();
+//NavBar();
 ShowMessages();
 ?>
 <!--<!DOCTYPE html>-->
