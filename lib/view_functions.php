@@ -26,8 +26,11 @@ function LoadTemplate ( $name ) {
     return $template_html;
 }
 
+/* Deze functie voegt data en template samen en print het resultaat */
 function ReplaceContent( $data, $template_html )
 {
+    $returnval = "";
+
     foreach ( $data as $row )
     {
         //replace fields with values in template
@@ -37,9 +40,12 @@ function ReplaceContent( $data, $template_html )
             $content = str_replace("@@$field@@", $value, $content);
         }
 
-        print $content;
+        $returnval .= $content;
     }
+
+    return $returnval;
 }
+
 function ReplaceContentOneRow( $row, $template_html )
 {
     //replace fields with values in template

@@ -20,11 +20,11 @@ if ($_POST["savebutton"] == "Save") {
     if ($_POST[$pkey] > 0) //update
     {
         $sql = "UPDATE $tablename SET " . implode(", ", $sql_body) . " WHERE $pkey=" . $_POST[$pkey];
-        if (ExecuteSQL($sql)) $new_url = "/dag2/$formname.php?id=" . $_POST[$pkey] . "&updateOK=true";
+        if (ExecuteSQL($sql)) $new_url = "wdev_nicole/dag2/$formname.php?id=" . $_POST[$pkey] . "&updateOK=true";
     } else //insert
     {
         $sql = "INSERT INTO $tablename SET " . implode(", ", $sql_body);
-        if (ExecuteSQL($sql)) $new_url = "/dag2/$afterinsert?insertOK=true";
+        if (ExecuteSQL($sql)) $new_url = "wdev_nicole/dag2/$afterinsert?insertOK=true";
     }
 
     print $sql;

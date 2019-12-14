@@ -1,6 +1,7 @@
 <?php
-require_once "lib/autoload.php";
 $login_form = true;
+require_once "lib/autoload.php";
+
 //$css = "login.css";
 
 //redirect naar profiel als de gebruiker al ingelogd is

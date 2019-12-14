@@ -3,6 +3,7 @@ require_once "lib/autoload.php";
 //$css = array("profile.css");
 BasicHead();
 
+
 ?>
 <body>
 <a href="#"><img src="img/logo4.svg" alt="getfiT logo" id="svg-logo"></a>
@@ -10,11 +11,21 @@ BasicHead();
     <div class="band">
         <a href="#"><img id="user-icon" src="img/user-icon.JPG" alt="user-icon"></a>
         <?php
-        $data = GetData("select * from users");
+        $data = GetData("select * from users where usr_id=" . $_GET['id'] );
         $template = LoadTemplate("profile_greeting");
-        ReplaceContent( $data, $template);
+        print ReplaceContent( $data, $template);
+        ShowMessages();
         ?>
-        <input id="logout-btn" type="submit" value="Log Out">
+
+        <form method="post" action="lib/logout.php" id="logout-form">
+
+            <input type="hidden" id="formname" name="formname" value="logout_form">
+            <input type="hidden" id="afterinsert" name="afterinsert" value="login.php">
+            <input type="hidden" id="tablename" name="tablename" value="users">
+            <input type="hidden" id="pkey" name="pkey" value="usr_id">
+            <input id="logout-btn" name="logoutbutton" type="submit" value="Log Out">
+        </form>
+
     </div>
     <div id="trap">
     </div>

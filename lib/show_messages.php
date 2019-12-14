@@ -12,8 +12,8 @@ function ShowMessages()
         {
             $row = array( "message" => $message );
             $data = array( $row ) ;
-            $templ = LoadTemplate("messages");
-            print ReplaceContent( $data, $templ );
+            $template = LoadTemplate("messages");
+            print ReplaceContent( $data, $template );
         }
 
         unset($_SESSION['msg']);

@@ -21,7 +21,7 @@ if ($_POST["editbutton"] == "Edit") {
     if ($_POST[$pkey] > 0) //update
     {
         $sql = "UPDATE $tablename SET " . implode(", ", $sql_body) . " WHERE $pkey=" . $_POST[$pkey];
-        if (ExecuteSQL($sql)) $new_url = "/dag2/$formname.php?id=" . $_POST[$pkey] . "&updateOK=true";
+        if (ExecuteSQL($sql)) $new_url = "wdev_nicole/dag2/$formname.php?id=" . $_POST[$pkey] . "&updateOK=true";
     } else {
         print "Exercise not found.";
     }
@@ -32,7 +32,7 @@ if ($_POST["editbutton"] == "Edit") {
 if ($_POST["deletebutton"] == "Delete") {
     {
         $sql = "DELETE FROM $tablename WHERE $pkey=" . $_GET[$pkey];
-        if (ExecuteSQL($sql)) $new_url = "/dag2/$afterinsert?insertOK=true";
+        if (ExecuteSQL($sql)) $new_url = "wdev_nicole/dag2/$afterinsert?insertOK=true";
     }
 
     print $sql;
