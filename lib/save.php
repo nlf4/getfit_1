@@ -1,5 +1,6 @@
 <?php
 require_once "autoload.php";
+var_dump($_POST);
 
 $tablename = $_POST["tablename"];
 $formname = $_POST["formname"];

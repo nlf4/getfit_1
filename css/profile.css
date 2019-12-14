@@ -27,6 +27,8 @@ body {
     height: 1200px;
     width: 1300px;
     background: rgba(163, 163, 165, 0.692);
+    /*overflow: auto;*/
+    /*display: block;*/
 }
 
 .band {
@@ -117,7 +119,9 @@ section {
 .col {
     border-radius: 20px;
     margin-bottom: 0;
-    height: 800px;
+    display: block;
+    overflow: auto;
+    /*height: 800px;*/
     width: 450px;
     background: #6c726dde;
     box-shadow: -4px 4px 3px -1px rgb(75, 74, 75);

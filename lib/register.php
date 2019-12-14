@@ -18,7 +18,9 @@ if ( $formname == "registration_form" AND $_POST['registerbutton'] == "Register"
     //controle geldig e-mailadres
     if (!filter_var($_POST["usr_email"], FILTER_VALIDATE_EMAIL)) die("Incorrect email address format");
 
-    //wachtwoord coderen
+    if (!($_POST["usr_password"] === $_POST["usr_passwordconfirm"])) die("Passwords do not match.");
+
+        //wachtwoord coderen
     $password_encrypted = password_hash ( $_POST["usr_password"] , PASSWORD_DEFAULT );
 
     $sql = "INSERT INTO $tablename SET " .

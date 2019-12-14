@@ -6,9 +6,10 @@ NavBar();
 ?>
     <body>
         <?php
-        $data = GetData("select * from exercises where exe_id=" . $_GET['id'] );
+//        $data = GetData("select * from exercises where exe_id=" . $_GET['id'] );
         $template = LoadTemplate("exercise_form_template");
-        ReplaceContent( $data, $template);
+        print $template;
+//        ReplaceContent( $data, $template);
         ?>
     </body>
 </html>

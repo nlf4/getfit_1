@@ -1,6 +1,11 @@
 <?php
 require_once "lib/autoload.php";
+$login_form = true;
 //$css = "login.css";
+
+//redirect naar profiel als de gebruiker al ingelogd is
+if ( isset($_SESSION['usr']) ) { $_SESSION["msg"][] = "You are already logged in!"; header("Location: profile.php"); exit; }
+
 BasicHead();
 NavBar();
 ?>
@@ -15,8 +20,8 @@ NavBar();
 <nav>
     <div id="logo"><a href="#" title="logo"><img src="../images/logo1.svg" alt="Logo van de site" class="logo"></a></div>
     <div id="links">
-        <li><a href=”#”>About</a></li>
-        <li><a href=”#”>Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
     </div>
 </nav>
 <div id="login">

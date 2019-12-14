@@ -100,12 +100,12 @@ h1 {
 }
 
 .details input,
-.details #submit-btn {
+.details #savebutton {
     padding: 1em;
     margin-bottom: 1em;
 }
 
-.details #submit-btn {
+.details #savebutton {
     background: #3ca587;
     color: #fdf8ff;
     border: 0;
@@ -115,7 +115,7 @@ h1 {
     text-transform: uppercase;
     margin-left: 15px;
 }
-.details #submit-btn:hover {
+.details #savebutton:hover {
     background: #41d8b8;
 }
 
