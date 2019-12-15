@@ -12,7 +12,7 @@ $_application_folder = "https://wdev.be/wdev_nicole/dag2";
 
 //redirect naar NO ACCESS pagina als de gebruiker niet ingelogd is en niet naar
 //de loginpagina gaat
-//if ( ! isset($_SESSION['usr']) AND ! $login_form AND ! $register_form AND ! $no_access)
-//{
-//    header("Location: /oef62/no_access.php");
-//}
+if ( ! isset($_SESSION['usr']) AND ! $login_form AND ! $register_form AND ! $no_access)
+{
+    header("Location: https://wdev.be/wdev_nicole/dag2/login.php");
+}
