@@ -1,7 +1,7 @@
 <?php
 require_once "lib/autoload.php";
-//$css = "exercise-form.css";
-BasicHead();
+$css = array("exercise-form.css");
+BasicHead($css);
 NavBar();
 ?>
     <body>

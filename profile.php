@@ -1,7 +1,7 @@
 <?php
 require_once "lib/autoload.php";
-//$css = array("profile.css");
-BasicHead();
+$css = array("profile.css");
+BasicHead($css);
 
 
 ?>
@@ -52,7 +52,7 @@ BasicHead();
                 <?php
                 $data = GetData("select * from exercises");
                 $template = LoadTemplate("profile");
-                ReplaceContent( $data, $template);
+                print ReplaceContent( $data, $template);
                 ?>
             </ul>
             <input id="add-btn" type="submit" value="+" onclick="location.href='options.php';">

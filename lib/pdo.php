@@ -1,29 +1,25 @@
 <?php
-
 function GetConnection()
 {
-    $dsn = "mysql:host=185.115.218.166;dbname=wdev_nicole";
-    $user = "wdev_nicole";
-    $passwd = "ywD2eP3ePn9p";
-
-    $pdo = new PDO($dsn, $user, $passwd);
+    require_once "password.php";
+    $arr_connection = GetConnectionData();
+    $dbhost = $arr_connection['dbhost'];
+    $dbname = $arr_connection['dbname'];
+    $dbuser = $arr_connection['dbuser'];
+    $dbpasswd = $arr_connection['dbpasswd'];
+    $dsn = "mysql:host=$dbhost;dbname=$dbname" ;
+    $pdo = new PDO($dsn, $dbuser, $dbpasswd);
     return $pdo;
 }
-
 function GetData( $sql )
 {
-    $dsn = "mysql:host=185.115.218.166;dbname=wdev_nicole";
-    $user = "wdev_nicole";
-    $passwd = "ywD2eP3ePn9p";
-
-    $pdo = new PDO($dsn, $user, $passwd);
-
+    $pdo = GetConnection();
     $stm = $pdo->prepare($sql);
     $stm->execute();
-
     $rows = $stm->fetchAll(PDO::FETCH_ASSOC);
     return $rows;
 }
+
 function ExecuteSQL( $sql )
 {
     $pdo = GetConnection();

@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-image: url("../img/options-bg3.png");
+    background-position: center center;
+    background-size: cover;
+}
+.options-nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.options-nav img {
+    margin-top: 20px;
+    width: 200px;
+    height: 80px;
+}
+
+.options-nav li {
+    list-style: none;
+}
+.options-nav li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
+}
+.options-nav .item.button {
+    margin-right: 100px;
+    margin-top: 40px;
+    background: #3ca587;
+    height: 40px;
+    font-size: 18px;
+    color: whitesmoke;
+    padding: 20px 30px;
+    border-radius: 40px;
+}
+.options-nav .item.button:hover {
+    margin-right: 100px;
+    background: #3fcbad;
+    color: white;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 20px auto 20px auto;
+    width: 400px;
+    font-weight: 200;
+    line-height: 30px;
+    background: rgba(9, 32, 37, 0.84);
+    font-family: Open Sans, sans-serif;
+    font-size: 48px;
+    padding: 30px 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+}
+.wrapper {
+    width: 800px;
+    margin: 30px auto 20px auto;
+    border-radius: 25px;
+    padding: 1.9em;
+}
+form#detail {
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    background: rgba(9, 32, 37, 0.84);
+}
+
+.description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    color: white;
+}
+.description > textarea {
+
+    min-width: 16em;
+    background: transparent;
+    color: #fff;
+    margin: 10px 30px 20px 20px;
+    padding: 15px 30px 15px 15px;
+}
+.description label {
+    text-align: left;
+}
+
+.details {
+    flex: 1;
+    margin-right: 2em;
+}
+
+.details p {
+    color: #fdf8ff;
+    margin-left: 20px;
+}
+
+.details input {
+    width: 100%;
+    background: transparent;
+    color: #fdf8ff;
+    border-radius: 40px;
+    margin-left: 15px;
+}
+
+.details input,
+.details #savebutton {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.details #savebutton {
+    background: #3ca587;
+    color: #fdf8ff;
+    border: 0;
+    padding: 15px 50px;
+    border-radius: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+.details #savebutton:hover {
+    background: #41d8b8;
+}
+
+label {
+    color: #fdf8ff;
+    padding-left: 15px;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+
+input#editbutton, input#deletebutton, a#backbutton {
+    margin-top: 40px;
+    background: #3ca587;
+    height: 40px;
+    font-size: 18px;
+    color: whitesmoke;
+    padding: 20px 30px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    align-items: center;
+    border: none;
+}

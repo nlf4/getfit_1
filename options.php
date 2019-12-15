@@ -9,9 +9,9 @@ NavBar();
     <main>
         <div class="container">
             <?php
-            $data = GetData("select * from exercises");
+            $data = GetData("select * from options");
             $template = LoadTemplate("options_template");
-            ReplaceContent( $data, $template);
+            print ReplaceContent( $data, $template);
             ?>
         </div>
     </main>

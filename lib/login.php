@@ -15,7 +15,7 @@ if ( $formname == "login_form" AND $buttonvalue == "Log in" )
     else
     {
         $_SESSION["msg"][] = "Sorry! Wrong password!";
-        header("Location: wdev_nicole/dag2/login.php");
+        header("Location: https://wdev.be/wdev_nicole/dag2/login.php");
     }
 }
 else

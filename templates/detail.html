@@ -8,10 +8,7 @@
         <input type="hidden" id="tablename" name="tablename" value="exercises">
         <input type="hidden" id="pkey" name="pkey" value="exe_id">
 
-        <div class="description">
-            <label for="exe_desc" class="col-form-label">Description: </label>
-            <p id="exe_desc">@@exe_desc@@</p>
-        </div>
+
         <div class="details">
 <!--            <label for="exe_id" class="col-form-label">Id: </label>-->
 <!--            <p id="exe_id">@@exe_id@@</p>-->
@@ -32,10 +29,13 @@
             <p id="exe_img">@@exe_img@@</p>
 
         </div>
-    <a href="profile.php"><</a>
+        <div class="description">
+            <label for="exe_desc" class="col-form-label">Description: </label>
+            <p id="exe_desc">@@exe_desc@@</p>
+        </div>
+    </form>
+    <a id="backbutton" href="profile.php"><</a>
     <input type="submit" name="editbutton" id="editbutton" value="Edit">
     <input type="submit" name="deletebutton" id="deletebutton" value="Delete">
-
-    </form>
 
 </div>

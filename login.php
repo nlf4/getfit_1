@@ -2,14 +2,14 @@
 $login_form = true;
 require_once "lib/autoload.php";
 
-//$css = "login.css";
+$css = array("login.css");
 
 //redirect naar profiel als de gebruiker al ingelogd is
-if ( isset($_SESSION['usr']) ) { $_SESSION["msg"][] = "You are already logged in!"; header("Location: profile.php"); exit; }
+if ( isset($_SESSION['usr']) ) { $_SESSION["msg"][] = "You are already logged in!"; header("Location: https://wdev.be/wdev_nicole/dag2/profile.php"); exit; }
 
-BasicHead();
+BasicHead($css);
 //NavBar();
-ShowMessages();
+
 ?>
 <!--<!DOCTYPE html>-->
 <!--<html>-->
@@ -26,6 +26,7 @@ ShowMessages();
         <li><a href="#">Contact</a></li>
     </div>
 </nav>
+<?php ShowMessages(); ?>
 <div id="login">
     <div class="container">
         <div id="login-row" class="row justify-content-center align-items-center">

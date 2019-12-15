@@ -21,9 +21,11 @@ function BasicHead( $css = "" )
     $_SESSION["head_printed"] = true;
 }
 
-function LoadTemplate ( $name ) {
-    $template_html = file_get_contents("templates/$name.html");
-    return $template_html;
+function LoadTemplate( $name )
+{
+    if ( file_exists("$name.html") ) return file_get_contents("$name.html");
+    if ( file_exists("templates/$name.html") ) return file_get_contents("templates/$name.html");
+    if ( file_exists("../templates/$name.html") ) return file_get_contents("../templates/$name.html");
 }
 
 /* Deze functie voegt data en template samen en print het resultaat */
@@ -50,12 +52,10 @@ function ReplaceContentOneRow( $row, $template_html )
 {
     //replace fields with values in template
     $content = $template_html;
-    if ( is_array($row))
+    foreach($row as $field => $value)
     {
-        foreach($row as $field => $value)
-        {
-            $content = str_replace("@@$field@@", $value, $content);
-        }
+        $content = str_replace("@@$field@@", $value, $content);
     }
+
     return $content;
 }

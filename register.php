@@ -1,8 +1,8 @@
 <?php
 $register_form = true;
 require_once "lib/autoload.php";
-//$css = "login.css";
-BasicHead();
+$css = array("register.css");
+BasicHead($css);
 //NavBar();
 ?>
     <body>

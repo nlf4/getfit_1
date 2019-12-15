@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url("profile-bg.jpg");
+    background-image: url("../img/cork.png");
     background-size: cover;
     height: 100vh;
     display: flex;
