@@ -11,19 +11,12 @@ BasicHead($css);
 //NavBar();
 
 ?>
-<!--<!DOCTYPE html>-->
-<!--<html>-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
-<!--    <link href="../css/opmaak.css" rel="stylesheet">-->
-<!--</head>-->
 <body>
 <nav>
-    <div id="logo"><a href="#" title="logo"><img src="../images/logo1.svg" alt="Logo van de site" class="logo"></a></div>
+    <div id="logo"><a href="#" title="logo"><img src="../img/logo1.svg" alt="Logo van de site" class="logo"></a></div>
     <div id="links">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#57">About</a></li>
+        <li><a href="#66">Contact</a></li>
     </div>
 </nav>
 <?php ShowMessages(); ?>
@@ -44,6 +37,22 @@ BasicHead($css);
         </div>
     </div>
 </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<section data-brackets-id="57" class="testimonials">
+    <h3 data-brackets-id="58" class="title">About Us</h3>
+    <p data-brackets-id="60" class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsum nulla eum ab minima sint, quis nemo omnis voluptatum adipisci beatae a amet odit similique, eos at sed dolor! Qui.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias optio nesciunt dolor illo, magni minus amet vero dolorum odit quam. Libero odit, ut unde. Quod fuga dolorum aspernatur iste sunt.lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+
+</section>
+<section data-brackets-id="66" class="contact">
+    <h3 data-brackets-id="67" class="title">Contact Us</h3>
+    <p data-brackets-id="68">If there are any questions you can always contact us at:</p>
+    <form data-brackets-id="70">
+        <p>email: getfit@gmail.com         <br>     tel: + 32 123 45 67 89 </p>
+    </form>
+</section>
+
 <footer>
     <p class="copyright">Copyright © 2019 GetfiT.
         <span class="second-line">All Rights Reserved.</span>
