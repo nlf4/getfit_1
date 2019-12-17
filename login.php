@@ -15,13 +15,8 @@ BasicHead($css);
 <nav>
     <div id="logo"><a href="#" title="logo"><img src="../img/logo1.svg" alt="Logo van de site" class="logo"></a></div>
     <div id="links">
-<<<<<<< HEAD
-        <li><a href="#">Ab</a></li>
-        <li><a href="#">Contact</a></li>
-=======
         <li><a href="#57">About</a></li>
         <li><a href="#66">Contact</a></li>
->>>>>>> bb7226872121946bd40114b4980b913527122a63
     </div>
 </nav>
 <?php ShowMessages(); ?>
@@ -42,8 +37,7 @@ BasicHead($css);
         </div>
     </div>
 </div>
-<<<<<<< HEAD
-=======
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <section data-brackets-id="57" class="testimonials">
@@ -83,7 +77,7 @@ BasicHead($css);
             </li>
         </ul>
     </div>
->>>>>>> bb7226872121946bd40114b4980b913527122a63
+
 
 
 
