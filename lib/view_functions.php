@@ -4,6 +4,10 @@ function NavBar() {
     print LoadTemplate("navbar");
 }
 
+function Footer() {
+    print LoadTemplate("footer");
+}
+
 function BasicHead( $css = "" )
 {
     global $_application_folder;

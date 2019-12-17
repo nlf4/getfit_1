@@ -6,7 +6,7 @@ $css = array("login.css");
 
 //redirect naar profiel als de gebruiker al ingelogd is
 if ( isset($_SESSION['usr']) ) { $_SESSION["msg"][] = "You are already logged in!"; header("Location: https://wdev.be/wdev_nicole/dag2/profile.php"); exit; }
-
+$css = array("login.css");
 BasicHead($css);
 //NavBar();
 
@@ -37,6 +37,7 @@ BasicHead($css);
         </div>
     </div>
 </div>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <section data-brackets-id="57" class="testimonials" id="about">
@@ -52,33 +53,7 @@ BasicHead($css);
         <p>email: getfit@gmail.com         <br>     tel: + 32 123 45 67 89 </p>
     </form>
 </section>
-
-<footer>
-    <p class="copyright">Copyright © 2019 GetfiT.
-        <span class="second-line">All Rights Reserved.</span>
-    </p>
-    <div>
-        <ul class="social-media-list">
-            <li>
-                <a href="https://www.facebook.com/">
-                    <ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/">
-                    <ion-icon class="logo-twitter" name="logo-twitter"></ion-icon>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/">
-                    <ion-icon class="logo-instagram" name="logo-instagram"></ion-icon>
-                </a>
-            </li>
-        </ul>
-    </div>
-
-            <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-        </footer>
+<?php Footer(); ?>
     </body>
 </html>
 
