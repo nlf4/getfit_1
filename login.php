@@ -53,36 +53,6 @@ BasicHead($css);
         <p>email: getfit@gmail.com         <br>     tel: + 32 123 45 67 89 </p>
     </form>
 </section>
-
-<footer>
-    <p class="copyright">Copyright © 2019 GetfiT.
-        <span class="second-line">All Rights Reserved.</span>
-    </p>
-    <div>
-        <ul class="social-media-list">
-            <li>
-                <a href="https://www.facebook.com/">
-                    <ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/">
-                    <ion-icon class="logo-twitter" name="logo-twitter"></ion-icon>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/">
-                    <ion-icon class="logo-instagram" name="logo-instagram"></ion-icon>
-                </a>
-            </li>
-        </ul>
-    </div>
-
-
-
-
-
-
 <?php Footer(); ?>
     </body>
 </html>
