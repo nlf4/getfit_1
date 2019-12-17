@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-    height: 1200px;
+    min-height: 2000px;
     width: 1300px;
     background: rgba(163, 163, 165, 0.692);
     /*overflow: auto;*/
@@ -120,7 +120,7 @@ section {
     border-radius: 20px;
     margin-bottom: 0;
     display: block;
-    overflow: auto;
+    /*overflow: auto;*/
     /*height: 800px;*/
     width: 450px;
     background: #6c726dde;
@@ -140,7 +140,7 @@ section {
 
 .col li {
     list-style: none;
-    height: 50px;
+    height: 100px;
     background: #FFFFFF;
     /* border: 2px solid #112331; */
     border-radius: 30px;
