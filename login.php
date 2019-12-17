@@ -13,10 +13,10 @@ BasicHead($css);
 ?>
 <body>
 <nav>
-    <div id="logo"><a href="#" title="logo"><img src="../img/logo1.svg" alt="Logo van de site" class="logo"></a></div>
+    <div id="logo"><a href="#" title="logo"><img src="img/logo4.svg" alt="Logo van de site" class="logo"></a></div>
     <div id="links">
-        <li><a href="#57">About</a></li>
-        <li><a href="#66">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
     </div>
 </nav>
 <?php ShowMessages(); ?>
@@ -39,13 +39,13 @@ BasicHead($css);
 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<section data-brackets-id="57" class="testimonials">
+<section data-brackets-id="57" class="testimonials" id="about">
     <h3 data-brackets-id="58" class="title">About Us</h3>
     <p data-brackets-id="60" class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsum nulla eum ab minima sint, quis nemo omnis voluptatum adipisci beatae a amet odit similique, eos at sed dolor! Qui.
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias optio nesciunt dolor illo, magni minus amet vero dolorum odit quam. Libero odit, ut unde. Quod fuga dolorum aspernatur iste sunt.lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
 
 </section>
-<section data-brackets-id="66" class="contact">
+<section data-brackets-id="66" class="contact" id="contact">
     <h3 data-brackets-id="67" class="title">Contact Us</h3>
     <p data-brackets-id="68">If there are any questions you can always contact us at:</p>
     <form data-brackets-id="70">

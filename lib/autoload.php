@@ -14,5 +14,5 @@ $_application_folder = "https://wdev.be/wdev_nicole/dag2";
 //de loginpagina gaat
 if ( ! isset($_SESSION['usr']) AND ! $login_form AND ! $register_form AND ! $no_access)
 {
-    header("Location: https://wdev.be/wdev_nicole/dag2/login.php");
+    header("Location: https://wdev.be/wdev_daan/getfit/login.php");
 }
