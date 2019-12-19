@@ -30,10 +30,12 @@ img {
 nav {
     display: flex;
     justify-content: space-between;
+    color: #00aced;
 }
 
 #links {
     display: flex;
+    justify-content: space-between;
 }
 
 #links li {
@@ -42,6 +44,7 @@ nav {
     padding: 20px;
     margin: 20px;
     font-size: 30px;
+    color: #00aced;
 }
 
 #links li a {
@@ -114,22 +117,6 @@ nav {
     font-size: 30px;
 }
 
-  section:not(.hero):nth-child(even) {
-      background-color: black;
-  }
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 10px;
-}
-
-user agent stylesheet
-section {
-    display: block;
-}
-
 section {
     padding: 20px;
 
@@ -149,7 +136,6 @@ footer {
     padding: 0;
     z-index: 2;
     position: relative;
-    color: #484848;
     text-align: center;
     color:whitesmoke;
     background-color: black;

@@ -39,7 +39,7 @@ if ( $formname == "registration_form" AND $_POST['registerbutton'] == "Register"
 
         if ( CheckLogin( $_POST["usr_email"] , $_POST["usr_password"]) )
         {
-            header("Location: https://wdev.be/wdev_nicole/dag2/profile.php");
+            header("Location: https://wdev.be/wdev_daan/getfit/profile.php");
         }
     }
     else
