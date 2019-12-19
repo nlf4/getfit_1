@@ -4,7 +4,6 @@
     padding: 0;
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
-
 }
 
 body {
@@ -24,7 +23,7 @@ body {
 }
 
 .container {
-    min-height: 2000px;
+    height: 1200px;
     width: 1300px;
     background: rgba(163, 163, 165, 0.692);
     /*overflow: auto;*/
@@ -92,8 +91,6 @@ section {
     align-items: center;
     color: white;
     font-size: 1.5em;
-
-
 }
 .workout-heading {
     letter-spacing: 2px;
@@ -120,7 +117,7 @@ section {
     border-radius: 20px;
     margin-bottom: 0;
     display: block;
-    /*overflow: auto;*/
+    overflow: auto;
     /*height: 800px;*/
     width: 450px;
     background: #6c726dde;
@@ -140,7 +137,7 @@ section {
 
 .col li {
     list-style: none;
-    height: 100px;
+    height: 50px;
     background: #FFFFFF;
     /* border: 2px solid #112331; */
     border-radius: 30px;

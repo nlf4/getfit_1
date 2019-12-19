@@ -3,10 +3,9 @@ require_once "lib/autoload.php";
 $css = array("profile.css");
 BasicHead($css);
 
-
 ?>
 <body>
-<a href="#"><img src="img/logo4.svg" alt="getfiT logo" id="svg-logo"></a>
+<a href="login.php"><img src="img/logo4.svg" alt="getfiT logo" id="svg-logo"></a>
 <div class="container">
     <div class="band">
         <a href="#"><img id="user-icon" src="img/user-icon.JPG" alt="user-icon"></a>

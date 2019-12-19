@@ -5,7 +5,7 @@
       <paths name="wdev_nicole">
         <serverdata>
           <mappings>
-            <mapping deploy="wdev.be/wdev_nicole/dag2" local="$PROJECT_DIR$" web="https://wdev.be/wdev_nicole/dag2" />
+            <mapping deploy="dag2" local="$PROJECT_DIR$" web="dag2" />
           </mappings>
         </serverdata>
       </paths>

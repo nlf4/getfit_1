@@ -10,11 +10,13 @@ body {
     background-position: center center;
     background-size: cover;
 }
+
 .options-nav {
     display: flex;
     justify-content: space-between;
     align-content: center;
 }
+
 .options-nav img {
     margin-top: 20px;
     width: 200px;
@@ -24,12 +26,13 @@ body {
 .options-nav li {
     list-style: none;
 }
+
 .options-nav li a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-
 }
+
 .options-nav .item.button {
     margin-right: 100px;
     margin-top: 40px;
@@ -40,6 +43,7 @@ body {
     padding: 20px 30px;
     border-radius: 40px;
 }
+
 .options-nav .item.button:hover {
     margin-right: 100px;
     background: #3fcbad;
@@ -70,47 +74,54 @@ form#detail {
     padding: 30px;
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
     background: rgba(9, 32, 37, 0.84);
 }
 
 .description {
-    flex: 1;
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
     order: 2;
     color: white;
+
 }
 .description > textarea {
-
     min-width: 16em;
     background: transparent;
     color: #fff;
     margin: 10px 30px 20px 20px;
     padding: 15px 30px 15px 15px;
 }
+
 .description label {
     text-align: left;
 }
 
 .details {
-    flex: 1;
+    width: 300px;
     margin-right: 2em;
+    display: flex;
+}
+
+.block label { display: inline-block; width: 140px; text-align: left; }
+
+.details label {
+    color: #fdf8ff;
+    padding-left: 15px;
+    text-transform: uppercase;
+    line-height: 40px;
 }
 
 .details p {
     color: #fdf8ff;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
+    /*width: 100%;*/
+    /*background: transparent;*/
+    /*border-radius: 40px;*/
+    /*display: inline-block;*/
 }
 
-.details input {
-    width: 100%;
-    background: transparent;
-    color: #fdf8ff;
-    border-radius: 40px;
-    margin-left: 15px;
-}
-
-.details input,
 .details #savebutton {
     padding: 1em;
     margin-bottom: 1em;
@@ -130,22 +141,25 @@ form#detail {
     background: #41d8b8;
 }
 
-label {
-    color: #fdf8ff;
-    padding-left: 15px;
-    text-transform: uppercase;
-    line-height: 40px;
+.button {
+    display: block;
+    flex-basis: 100%;
+    order: 3;
 }
 
 input#editbutton, input#deletebutton, a#backbutton {
     margin-top: 40px;
     background: #3ca587;
-    height: 40px;
+    vertical-align: center;
     font-size: 18px;
     color: whitesmoke;
-    padding: 20px 30px;
+    padding: 10px 20px;
     border-radius: 40px;
     text-transform: uppercase;
     align-items: center;
     border: none;
+    margin-right: 10px;
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
 }
+

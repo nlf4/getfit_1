@@ -7,7 +7,7 @@ BasicHead($css);
 ?>
     <body>
         <nav>
-            <div id="logo"><a href="#" title="logo"><img src="/img/logo1.svg" alt="Logo van de site" class="logo"></a></div>
+            <div id="logo"><a href="login.php" title="logo"><img src="/img/logo1.svg" alt="Logo van de site" class="logo"></a></div>
             <div id="links">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>

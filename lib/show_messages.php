@@ -5,14 +5,14 @@ function ShowMessages()
     if ( ! $_SESSION["head_printed"] ) BasicHead();
 
     //weergeven messages
-    if ( count($_SESSION["msg"]) > 0 )
+    if ( is_array($_SESSION["msg"]) AND count($_SESSION["msg"]) > 0 )
     {
 
         foreach( $_SESSION["msg"] as $message )
         {
             $row = array( "message" => $message );
             $templ = LoadTemplate("messages");
-            print ReplaceContentOneRow( $row, $templ );
+            print ReplaceContentOneRow( $row, $templ ); //11111
         }
 
         unset($_SESSION['msg']);
